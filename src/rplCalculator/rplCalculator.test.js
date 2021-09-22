@@ -1,4 +1,4 @@
-import { calculate } from "./rpl";
+import { calculate } from "./rplCalculator";
 
 describe('rpl calculator tests', () => {
     it('calculates sum', () => {

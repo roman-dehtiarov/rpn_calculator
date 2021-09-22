@@ -1,6 +1,6 @@
 
 import readline from 'readline';
-import {Operations, calculate} from '../rpl/rpl'
+import {Operations, calculate} from '../rplCalculator/rplCalculator'
 
 export default class CalculatorCLI {
     constructor(inputStream, outputStream) {
