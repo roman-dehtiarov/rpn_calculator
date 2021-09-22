@@ -4,6 +4,7 @@
   "description": "Command-line reverse polish notation calculator",
   "main": "index.js",
   "scripts": {
+    "test": "jest",
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules",
     "start": "npm run --silent --no-progress build && node dist/index.js"
   },
