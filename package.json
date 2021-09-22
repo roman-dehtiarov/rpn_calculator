@@ -4,6 +4,8 @@
   "description": "Command-line reverse polish notation calculator",
   "main": "index.js",
   "scripts": {
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules",
+    "start": "npm run --silent --no-progress build && node dist/index.js"
   },
   "author": "Roman Dehtiarov",
   "license": "ISC",
@@ -12,4 +14,9 @@
     "@babel/core": "^7.15.5",
     "@babel/node": "^7.15.4",
     "@babel/preset-env": "^7.15.6",
+    "jest": "^27.2.1"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0"
+  }
 }
